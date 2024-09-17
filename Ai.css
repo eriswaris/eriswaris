@@ -10,6 +10,8 @@ body {
     background-color: #f4f4f4;
 }
 
+
+@media (max-width: 768px){
 header {
     background: #268faf;
     color: #fff;
@@ -160,3 +162,4 @@ footer .socials li a {
     text-decoration: none;
 }
 
+}
