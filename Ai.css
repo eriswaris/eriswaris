@@ -11,7 +11,8 @@ body {
 }
 
 
-@media (max-width: 768px){
+
+
 header {
     background: #268faf;
     color: #fff;
@@ -93,20 +94,19 @@ nav ul li a {
 
 .services {
     padding: 50px;
-    background-color: #fff;
+    background-color: #f7f7f7;
     text-align: center;
 }
 
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    flex-wrap: wrap;
+
 }
 
 .service-cards {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .service-card {
@@ -115,7 +115,6 @@ nav ul li a {
     width: 30%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
 }
 
 .service-card h3 {
@@ -162,4 +161,40 @@ footer .socials li a {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack the header on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Adjust Hero Section */
+    .hero {
+        height: auto; /* Let the hero section resize based on content */
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Smaller heading for mobile */
+    }
+
+    .hero .cta-button {
+        font-size: 1rem; /* Adjust button size for mobile */
+    }
+
+    /* Services Section Adjustments */
+    .service-cards {
+        flex-direction: column; /* Stack the service cards vertically */
+    }
+
+    .service-card {
+        flex-basis: 100%; /* Make each card full width on mobile */
+    }
 }
