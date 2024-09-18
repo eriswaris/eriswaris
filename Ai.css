@@ -35,7 +35,7 @@ header .logo {
 }
 
 .logo img.logo-img {
-    width: 50px; /* Adjust the width of the logo */
+    width: 150px; /* Adjust the width of the logo */
     height: auto; /* Keep the aspect ratio */
     margin-right: 10px; /* Add some space between the image and the text */
 }
